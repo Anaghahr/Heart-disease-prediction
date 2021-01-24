@@ -9,7 +9,7 @@ import pandas as pd
 import numpy as np
 import pickle
 
-mydata=pd.read_csv("C:/Users/Abhilash/Desktop/proj_flask/heart disease.csv")
+mydata=pd.read_csv("./heart disease.csv")
 mydata.drop(['currentSmoker','education','diaBP','heartRate'],axis=1,inplace=True)
 
 mean = mydata['glucose'].mean()
